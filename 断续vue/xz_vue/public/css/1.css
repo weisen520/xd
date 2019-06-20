@@ -1,0 +1,26 @@
+.content{
+    padding:0;
+    margin-top:10px;
+}
+.c1{  height:50px;}
+.ul-size{
+    width:103px;
+    /*height:70px;*/
+    list-style: none;
+    background:rgba(255,255,255,0.8);
+    border-radius:4px;
+    cursor:pointer;
+}
+.ul-size>li{height:27px;}
+.ul-size>.li-last{height:0;overflow:hidden;transition:all .5s linear;}
+.ul-size:hover>li>.rotate{
+    transform:rotate(180deg);
+}
+.ul-size:hover>.li-last{
+    height:27px;
+}
+.rotate{transition:transform .5s linear; margin-left:5px;}
+.ul-size>li>span{
+    font-size:12px;
+}
+.ul-size>li:last-child:hover{background:#fff;}
